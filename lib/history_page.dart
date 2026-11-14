@@ -46,31 +46,25 @@ class HistoryPage extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        subtitle: Text(
-          date,
-          style: const TextStyle(color: Colors.black54),
+        subtitle: Padding(
+          padding: const EdgeInsets.only(top: 4),
+          child: Text(
+            "$date\n$price",
+            style: const TextStyle(color: Colors.black54),
+          ),
         ),
-        trailing: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              price,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-            ),
-            const SizedBox(height: 5),
-            OutlinedButton.icon(
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Color(0xFF0A3D62),
-                side: BorderSide(color: Color(0xFF0A3D62)),
-              ),
-              onPressed: () {},
-              icon: const Icon(Icons.refresh, size: 18),
-              label: const Text("Reagendar"),
-            ),
-          ],
+        isThreeLine: true,
+        trailing: OutlinedButton.icon(
+          style: OutlinedButton.styleFrom(
+            foregroundColor: const Color(0xFF0A3D62),
+            side: const BorderSide(color: Color(0xFF0A3D62)),
+            visualDensity: VisualDensity.compact,
+            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+          ),
+          onPressed: () {},
+          icon: const Icon(Icons.refresh, size: 16),
+          label: const Text("Reagendar"),
         ),
       ),
     );

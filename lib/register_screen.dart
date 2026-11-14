@@ -91,7 +91,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 children: [
                   Expanded(
                     child: DropdownButtonFormField<String>(
-                      value: selectedDay,
+                      initialValue: selectedDay,
                       hint: const Text("Día"),
                       dropdownColor: const Color(0xFF0A3D62),
                       style: const TextStyle(color: Colors.white),
@@ -112,7 +112,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: DropdownButtonFormField<String>(
-                      value: selectedMonth,
+                      initialValue: selectedMonth,
                       hint: const Text("Mes"),
                       dropdownColor: const Color(0xFF0A3D62),
                       style: const TextStyle(color: Colors.white),
@@ -133,7 +133,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: DropdownButtonFormField<String>(
-                      value: selectedYear,
+                      initialValue: selectedYear,
                       hint: const Text("Año"),
                       dropdownColor: const Color(0xFF0A3D62),
                       style: const TextStyle(color: Colors.white),
