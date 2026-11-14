@@ -26,7 +26,7 @@ class ProfilePage extends StatelessWidget {
             // Foto de perfil
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("assets/profile.jpg"), // 👈 pon tu imagen en assets
+              child: Icon(Icons.person, size: 56, color: Color(0xFF0A3D62)), // placeholder until real profile photos are loaded
               backgroundColor: Colors.white,
             ),
             const SizedBox(height: 15),
