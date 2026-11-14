@@ -6,7 +6,9 @@
 ![Dart](https://img.shields.io/badge/Dart-3-0175C2?logo=dart&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-supported-3DDC84?logo=android&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-supported-000000?logo=apple&logoColor=white)
+![CI](https://github.com/leandromerov/fastwork-mobile-app/actions/workflows/ci.yml/badge.svg)
 ![Status](https://img.shields.io/badge/status-UI%20prototype-orange)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## The problem
 
@@ -56,7 +58,7 @@ Run the tests:
 flutter test
 ```
 
-No API keys or environment variables are required for the prototype.
+No API keys or environment variables are required for the prototype. CI runs `flutter analyze` and the widget tests on every push.
 
 ## Roadmap
 
@@ -70,3 +72,7 @@ No API keys or environment variables are required for the prototype.
 
 **Leandro Romero Villalobos** · IT Analyst & Programmer · Passau, Germany
 [GitHub](https://github.com/leandromerov) · leandroromerovillalobos@gmail.com
+
+## License
+
+[MIT](LICENSE)
